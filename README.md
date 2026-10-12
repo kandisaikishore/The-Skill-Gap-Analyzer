@@ -1,5 +1,10 @@
 # The Skill-Gap Analyzer
 
+## Live Demo / Deployment URL
+
+**Deployment URL:** Not verified yet. Add the confirmed public application URL here after checking the live service. The GitHub repository link is not a deployment URL.
+
+
 [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/saikishore2410/The-Skill-Gap-Analyzer) [![Issues](https://img.shields.io/github/issues/saikishore2410/The-Skill-Gap-Analyzer)](https://github.com/saikishore2410/The-Skill-Gap-Analyzer/issues) [![Last Commit](https://img.shields.io/github/last-commit/saikishore2410/The-Skill-Gap-Analyzer)](https://github.com/saikishore2410/The-Skill-Gap-Analyzer/commits/main)
 
 > The Skill-Gap Analyzer is a lightweight browser-based tool for comparing resume text with a job description. It surfaces matched skills, highlights gaps, and offers role-aligned suggestions to help make career preparation more focused.
