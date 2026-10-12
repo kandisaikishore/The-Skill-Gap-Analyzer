@@ -1,48 +1,54 @@
 # The Skill-Gap Analyzer
 
-A client-side resume and job-description skill-gap analyzer.
+**Understand how your resume aligns with a target role—then identify what to improve next.**
 
-## What it does
+The Skill-Gap Analyzer is a lightweight browser-based tool for comparing resume text with a job description. It surfaces matched skills, highlights gaps, and offers role-aligned suggestions to help make career preparation more focused.
 
-- Compares resume text with a target job description.
-- Extracts and matches technical/professional skills.
-- Calculates a match score.
-- Highlights critical, recommended, and matched skills.
-- Generates tailored resume bullet suggestions.
-- Runs entirely in the browser; resume/job text is not sent to a backend by the current implementation.
+## Features
+
+- Compare resume content against a target job description
+- Extract and match technical and professional skills
+- Display an overall match score
+- Separate matched, recommended, and critical skills
+- Generate suggestions for strengthening resume bullets
+- Perform analysis in the browser in the current implementation
 
 ## Tech stack
 
-- HTML5
-- JavaScript
+- HTML5 and JavaScript
 - Vite
 - Tailwind CSS
 
-## Local development
+## Quick start
 
 ```bash
+git clone https://github.com/saikishore2410/The-Skill-Gap-Analyzer.git
+cd The-Skill-Gap-Analyzer
 npm install
 npm run dev
 ```
 
-Open the Vite URL shown in the terminal.
+Open the local URL printed by Vite.
 
-## Validation and production build
+## Validate and build
 
 ```bash
-npm install
 npm test
 npm run lint
 npm run build
 npm run preview
 ```
 
-The production files are generated in `dist/`.
+Check `package.json` for the authoritative scripts available in the current branch.
 
-## Deployment
+## Privacy and limitations
 
-GitHub Actions runs the smoke test, TypeScript validation, and production build on pushes and pull requests. A separate GitHub Pages workflow repeats the smoke test and build, then deploys the `dist/` artifact when GitHub Pages is configured to use GitHub Actions.
+The current implementation runs in the browser and does not send resume/job text to a backend. Match scores are indicators to guide review—not a guarantee of ATS performance or hiring outcomes. Always verify suggested skills and resume statements for accuracy.
 
-## Security note
+## Contributing
 
-Do not commit API keys or other secrets. The current production UI is client-side and does not require a server secret for its core keyword-analysis functionality.
+Report issues with reproduction steps, and submit focused pull requests with appropriate tests.
+
+## License
+
+No license is specified. Add a `LICENSE` file before granting reuse rights.
