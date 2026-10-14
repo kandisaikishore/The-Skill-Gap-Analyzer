@@ -1,72 +1,44 @@
 # The Skill-Gap Analyzer
 
-## Live Demo / Deployment URL
+[![Source](https://img.shields.io/badge/Source-GitHub-181717?logo=github)](https://github.com/kandisaikishore/The-Skill-Gap-Analyzer) [![Last Commit](https://img.shields.io/github/last-commit/kandisaikishore/The-Skill-Gap-Analyzer)](https://github.com/kandisaikishore/The-Skill-Gap-Analyzer/commits/main)
 
-**Deployment URL:** Not verified yet. Add the confirmed public application URL here after checking the live service. The GitHub repository link is not a deployment URL.
+The Skill-Gap Analyzer is a career-development project focused on comparing current skills with target-role requirements and highlighting learning priorities. Check the current source to confirm which assessment and recommendation workflows are implemented.
 
+## Project goals
 
-[![Repository](https://img.shields.io/badge/GitHub-Repository-181717?logo=github)](https://github.com/saikishore2410/The-Skill-Gap-Analyzer) [![Issues](https://img.shields.io/github/issues/saikishore2410/The-Skill-Gap-Analyzer)](https://github.com/saikishore2410/The-Skill-Gap-Analyzer/issues) [![Last Commit](https://img.shields.io/github/last-commit/saikishore2410/The-Skill-Gap-Analyzer)](https://github.com/saikishore2410/The-Skill-Gap-Analyzer/commits/main)
+- Capture a current skill profile
+- Compare skills with a selected role or learning target
+- Highlight potential gaps and prioritize next learning steps
+- Make assumptions and recommendations easy to review
 
-> The Skill-Gap Analyzer is a lightweight browser-based tool for comparing resume text with a job description. It surfaces matched skills, highlights gaps, and offers role-aligned suggestions to help make career preparation more focused.
-
-## At a glance
-
-- **Purpose:** Understand the problem and supported workflows from the feature and scope sections below.
-- **Setup:** Follow the project-specific steps in **Getting started** or **Run locally**; verify commands against the current source and package scripts.
-- **Configuration:** Keep API keys, database passwords, tokens, and user data out of commits. Use local environment variables for secrets.
-- **Quality:** Run the available build, tests, and lint checks before proposing changes.
-
-
-
-**Understand how your resume aligns with a target role—then identify what to improve next.**
-
-The Skill-Gap Analyzer is a lightweight browser-based tool for comparing resume text with a job description. It surfaces matched skills, highlights gaps, and offers role-aligned suggestions to help make career preparation more focused.
-
-## Features
-
-- Compare resume content against a target job description
-- Extract and match technical and professional skills
-- Display an overall match score
-- Separate matched, recommended, and critical skills
-- Generate suggestions for strengthening resume bullets
-- Perform analysis in the browser in the current implementation
-
-## Tech stack
-
-- HTML5 and JavaScript
-- Vite
-- Tailwind CSS
-
-## Quick start
+## Getting started
 
 ```bash
-git clone https://github.com/saikishore2410/The-Skill-Gap-Analyzer.git
+git clone https://github.com/kandisaikishore/The-Skill-Gap-Analyzer.git
 cd The-Skill-Gap-Analyzer
-npm install
-npm run dev
 ```
 
-Open the local URL printed by Vite.
+Install the required runtime and dependencies according to the project manifest, then follow its configured development command. Keep API keys and user data out of version control.
 
-## Validate and build
+## Validation checklist
 
-```bash
-npm test
-npm run lint
-npm run build
-npm run preview
-```
+- Test missing, invalid, and duplicated skills
+- Verify scoring and gap prioritization with representative inputs
+- Explain how role requirements and skill data are sourced
+- Ensure recommendations are editable and not presented as guaranteed outcomes
+- Test empty results, errors, and accessibility
 
-Check `package.json` for the authoritative scripts available in the current branch.
+## Future improvements
 
-## Privacy and limitations
-
-The current implementation runs in the browser and does not send resume/job text to a backend. Match scores are indicators to guide review—not a guarantee of ATS performance or hiring outcomes. Always verify suggested skills and resume statements for accuracy.
+- Add clear role/skill schemas and examples
+- Explain recommendation logic and assumptions
+- Add test cases for scoring and ranking edge cases
+- Document setup and deployment configuration
 
 ## Contributing
 
-Report issues with reproduction steps, and submit focused pull requests with appropriate tests.
+Open issues with reproducible steps and include validation notes with pull requests.
 
 ## License
 
-No license is specified. Add a `LICENSE` file before granting reuse rights.
+No license file is currently declared. Add a `LICENSE` file to define reuse terms.
