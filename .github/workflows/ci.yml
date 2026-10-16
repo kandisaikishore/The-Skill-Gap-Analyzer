@@ -1,33 +1,29 @@
 name: The Skill Gap Analyzer CI
-
 on:
   push:
   pull_request:
   workflow_dispatch:
-
 permissions:
   contents: read
-
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-
+          node-version: 22
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: "10"
       - name: Install dependencies
-        run: npm install
-
+        run: pnpm install --no-frozen-lockfile
       - name: Smoke test
-        run: npm test
-
+        run: pnpm test
       - name: TypeScript validation
-        run: npm run lint
-
+        run: pnpm run lint
       - name: Production build
-        run: npm run build
+        run: pnpm run build
